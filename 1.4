@@ -1,0 +1,22 @@
+X = float(input("Enter the cost price of the scooter (Rs.): "))
+Y = float(input("Enter the repair cost (Rs.): "))
+Z = float(input("Enter the selling price (Rs.): "))
+# Calculate total cost price
+cost_price = X + Y
+# Ensure selling price is greater than cost price
+if Z <= cost_price:
+    print("No gain. Selling price must be greater than total cost.")
+else:
+    gain = Z - cost_price
+    gain_percent = (gain / cost_price) * 100
+# Display results
+    print(f"Total Cost Price = Rs. {cost_price}")
+    print(f"Gain = Rs. {gain}")
+    print(f"Gain Percent = {gain_percent:.2f}%")
+Sample Input/Output
+Enter the cost price of the scooter (Rs.): 50000
+Enter the repair cost (Rs.): 3000
+Enter the selling price (Rs.): 58000
+Total Cost Price = Rs. 53000.0
+Gain = Rs. 5000.0
+Gain Percent = 9.43%
