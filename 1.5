@@ -1,0 +1,27 @@
+total_systems = int(input("Enter the total number of systems in the lab: "))
+# Percent distribution
+dell_percent = 36
+lenovo_percent = 34
+acer_percent = 28
+samsung_percent = 2
+# Count per brand using integer rounding
+dell_count = total_systems * dell_percent // 100
+lenovo_count = total_systems * lenovo_percent // 100
+acer_count = total_systems * acer_percent // 100
+samsung_count = total_systems * samsung_percent // 100
+# Print results using sep
+print("Total Systems:", total_systems)
+print("Dell:", dell_count, sep="\t")
+print("Lenovo:", lenovo_count, sep="\t")
+print("Acer:", acer_count, sep="\t")
+print("Samsung:", samsung_count, sep="\t")
+or
+print("Total Systems:", total_systems)
+print("Dell:", dell_count, "\nLenovo:", lenovo_count, "\nAcer:", acer_count, "\nSamsung:", samsung_count, sep="\t")
+Sample input/output
+Enter the total number of systems in the lab: 150
+Total Systems: 150
+Dell: 54
+Lenovo: 51
+Acer:42
+Samsung: 3
